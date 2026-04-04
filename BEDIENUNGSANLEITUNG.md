@@ -30,8 +30,8 @@ Die beiden Geräte verbinden sich automatisch über **ESP-NOW** – eine direkte
 
 ## Erstinbetriebnahme
 
-1. **Slave einschalten**: XIAO ESP32C3 per USB-C mit Strom versorgen. Die LED-Anzeige leuchtet kurz auf, dann blinkt sie rot – das Gerät sucht den Master.
-2. **Master einschalten**: M5Core2 einschalten. Das Hauptmenü erscheint automatisch.
+1. **Großanzeige (Slave) einschalten**: Mitgeliefertes Netzteil mit Strom anschließen. Die LED-Anzeige leuchtet kurz auf, dann blinkt sie rot – das Gerät sucht den Master.
+2. **Fernbedienung (Master) einschalten**: Das Hauptmenü erscheint automatisch. Die Fernbedienung kann auch ohne Großanzeige verwendet werden.
 3. **Verbindungsaufbau**: Der Slave erkennt den Master automatisch (keine Konfiguration nötig). Nach erfolgreichem Verbindungsaufbau zeigt der Slave die aktuelle Einstellung an.
 
 > **Hinweis**: Slave und Master müssen einmalig mit der korrekten MAC-Adresse konfiguriert sein (Firmware-seitig hinterlegt). Bei Austausch eines Gerätes muss die Firmware entsprechend angepasst werden.
@@ -236,7 +236,7 @@ Empfängt der Slave länger als **3 Sekunden** kein Signal vom Master, bleibt di
 
 Ein Tippen auf den Touchscreen deaktiviert den Auto-Dimm-Modus sofort wieder.
 
-### Slave (XIAO ESP32C3)
+### Slave 
 
 Der Slave hat keine eigene Energieverwaltung. Er läuft, solange er mit Strom versorgt wird. Die WS2812B-LEDs können bei voller Helligkeit bis zu **~4 A** verbrauchen – auf ausreichende Stromversorgung achten.
 
@@ -258,11 +258,11 @@ Der Slave hat keine eigene Energieverwaltung. Er läuft, solange er mit Strom ve
 
 | Parameter | Wert |
 |---|---|
-| Gerät | Seeed Studio XIAO ESP32C3 |
+| Gerät | ESP32C3 |
 | Prozessor | ESP32-C3 (Single Core, 160 MHz) |
 | Drahtlos | ESP-NOW (2,4 GHz) |
 | LEDs | 86× WS2812B RGB (GPIO 2) |
-| Stromversorgung | 5 V via USB-C |
+| Stromversorgung | 5 V via Netzteil Achtung, die USB-C Buchse ist nur zur Programmierung |
 
 ### Verbindung
 

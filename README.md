@@ -117,6 +117,3 @@ struct TimerData {
 - **Sportveranstaltungen**: Sichtbare Großanzeige für Zuschauer und Athleten
 - **Spielstände**: Live-Scoreboard für Tischtennis, Darts, etc.
 
-## Lizenz
-
-Dieses Projekt steht unter der [MIT License](LICENSE).
